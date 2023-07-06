@@ -7,10 +7,13 @@
 </head>
 <body>
     <form action="index.php" method="get">
-Name: <input type="text" name="username">
+<input type="number" name="num1">
+<br>
+<input type="number" name="num2">
+<br>
+<input type="submit">
     </form>
-    <?php 
-    $username = "Your name will appear here";
-    echo $_GET["username"]; ?>
+    Answer: <?php 
+     echo $_GET["num1"]+ $_GET["num2"]; ?>
 </body>
 </html>
